@@ -5,7 +5,8 @@ st.title("PDF Merger")
 
 uploaded_files = st.file_uploader("Upload PDFs", type="pdf", accept_multiple_files=True)
 
-if st.button("Merge PDFs"): if uploaded_files: merger = PdfMerger()
+if st.button("Merge PDFs"): 
+if uploaded_files: merger = PdfMerger()
 
     for file in uploaded_files:
         merger.append(file)
